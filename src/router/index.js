@@ -4,17 +4,17 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 export const constantRouterMap = [{
-    path: '/login',
-    component: () => import('@/views/login'),
+    path: '/list',
+    component: () => import('@/views/list'),
     hidden: true
   },
   {
     path: '/',
     // component: Layout,
-    redirect: 'dashboard',
+    redirect: 'list',
     children: [{
       path: 'dashboard',
-      component: () => import('@/views/login'),
+      component: () => import('@/views/list'),
       name: '首页',
       meta: {
         title: '首页',
